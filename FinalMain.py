@@ -119,7 +119,7 @@ class CreatePlaylist(GetToken):
         time.sleep(3)
         self.driver.execute_script("window.scrollTo(0, 400)")
         time.sleep(2)
-        self.user_id = self.driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[3]/div[2]/div/article[1]/section/table/tbody/tr[1]/td[2]/p')
+        self.user_id = self.driver.find_element_by_xpath('/html/body/div[1]/div[4]/div/div[2]/div[3]/div[2]/div/article[1]/section/table/tbody/tr[1]/td[2]')
         
         #joining pl_url by formatting user id into it
         self.pl_url1 = 'https://api.spotify.com/v1/users/'
